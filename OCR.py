@@ -22,7 +22,7 @@ def tesseract_location(root):
     See tesseract documentation for help.
     """
     try:
-        pytesseract.pytesseract.tesseract_cmd = root
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     except FileNotFoundError:
         print("Please double check the Tesseract file directory or ensure it's installed.")
         sys.exit(1)
